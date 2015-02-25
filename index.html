@@ -1,0 +1,153 @@
+<doctype.html>
+  <HTML>
+    <head>
+      <title> Alfia's notes </title>
+      <link rel="stylesheet" type="text/css" href="stylesheets/style.css"/>
+    </head>
+		<body>
+		<div class="large_box">
+			<div class="lesson_highlights">
+				<h2>Lesson 1 Hignlights</h2>
+				<br><a href="Thinking like a programmer"><b>I. Thinking like a programmer</b><a><br>
+				<br><a href="What is World Wide Web?"><b>II. What is World Wide Web?<a></b><br>
+				<br><a href="Components of the World Wide Web"> <b>III.Components of the WWW</a></b><br>
+				<br><a href="HTML markup"><b> IV. HTML markup</a></b><br>
+			</div>
+			<div class="lesson_notes">
+				<p><h2>Lesson 1 Notes - Itroduction</h2></p>
+				<h3><a ID="Thinking like a programmer"> I. Thinking like a programmer</a></h3>
+				<p><b> 1. Procedural Thinking </b>
+				 - creating a "procedure", which is a clear and unambiguous instruction for a computer to follow.
+				<br><b> 2. Abstract Thinking </b>
+				- finding similarity, or "generality" amongst seemingly different things.
+				It would be impractical for a programmer to specifically program each of the web pages individually. The power of abstraction helps to avoid unnecessary repetition of work.
+				<br><b> 3. Systems Thinking </b>
+				 -breaking  a big problem down into smaller pieces. It involves creating a plan (often on paper) for how a program will work. It involves big-picture thinking and decision-making about a problem and how different pieces of a program can work together to solve it. If this is unclear now, don't worry! You'll understand what this means much more clearly by the end of the Nanodegree.
+				<br><b> 4. Technological Empathy </b> Computer empathy is the ability to understand what a computer is, how it works, and what it's good and bad at doing.
+				<br><b> 5. Debugging </b> - is a systematic process of identifying the cause of a computer program that doesn't work.
+				When a program doesn't work, it's because there is a mistake (also known as a "bug") somewhere in the computer code. Since these mistakes are an unavoidable part of programming, every good programmer has a system for fixing them and that system usually looks something like this:
+				<ul>
+				  <li>    Collect evidence (what makes this program fail?)
+				    <li>   Generate theories (what may have caused this problem?)
+				      <li>    Test those theories (if my theory is correct, how could I find out?)
+				        <li>    Fix the problem
+
+				</ul>
+				        <h3><a ID="What is World Wide Web?"> II. What is World Wide Web?</a></h3>
+				        <em> World Wide Web </em> is a collection of HTML documents.
+				        <br><em>HTML</em> is Hyper Text Markup Language. This is a basis for almost each web page.
+				        <br> HTML pages are linked by <em>hyper-links</em>, which makes the Web web-like.
+				        <br>  Web was invented in 1990-th, and has something around 30 billion pages.
+
+								<h3><a ID="Components of the World Wide Web"> III.Components of the World Wide Web</a></h3>
+				<ul>
+				<li><u>HTTP</u>- the main protocol of the Web
+				  <li><u>Servers</u> are computers that are optimized to sitting in the closets, rather than on the desktops, hosting files that make up the Web.
+				    <li><u>Internet</u> - the world's largest computer network
+				      <li><u>Browser</u> - a program that runs on a computer to display files that are found on the internet.
+				</ul>
+				HTML is made up of the following:
+				<ul>
+				<li>	Text content (what you see on the page)
+				  <li>	mark-up  (how the content is arranged)
+				    <li>other documents (eg images and videos)
+				      <li>links to other pages
+				</ul>
+				</p>
+				<h3><a ID="HTML markup"> IV. HTML markup</a></h3>
+					<p><b>HTML tags</b>
+				<br>
+				&lt;opening tag&gt; Content (or other tags)&lt;/closing tag&gt; -
+				this whole thing is an element. <br>
+				&lt;b&gt; &lt;/b&gt; - the content will be bold.<br>
+				&lt;i&gt; &lt;/i&gt; or &lt;em&gt;&lt;/em&gt; - the content will be in italics.<br>
+				To make content both bold and italisized, nest one set of tags inside the other.
+				</p>
+				<p><b>HTML attributes</b>
+				&lt;tag name_of_the_attribute = &quot;value&quot;&gt; &lt;/tag&gt;
+				<br>tags can have multiple attributes.
+				<br> anchor tag - &lt;a&gt; &lt;a href = &quot;www.reddit.com&quot;&gt; Derp &lt;/a&gt;
+				a - tag, href - attribute, www.reddit.com  - value of the attribute
+				<br>Anchor tag can also mark a spot on the HTML document (use &lt;a id="ID"&gt;, then use &lt;a href = &quot;ID&quot;&gt; Place to find &lt;/a&gt;)
+				</p>
+				<p><b>Images.</b>
+				&lt;img scr = &quot;URL&quot; alt = &quot;text&quot;&gt;
+				not that there is no closing tag for &lt;img&gt; (this is called a &quot;void tag&quot;,  a tag that does not have content, therefore  does not require a closing tag)
+				scr - source
+				alt - alternate (to display the text if image does not load)
+				<br> It is nice to include alt, some HTML browsers will complain if it is not there. Also, it is helpful for blind people.
+				</p>
+
+			</div>
+		</div>
+		<div class="large_box">
+			<div class="lesson_highlights">
+				<h2>Lesson 2 Hignlights</h2>
+				<br><a href="Inline and block elements"> <b>I. Inline and block elements</b></a><br>
+				<br><a href="The relationship between indented HTML and boxes"><b>III.The relationship between indented HTML and boxes</b></a><br>
+				<br><a href="The "tree-like structure" of HTML (DOM)"> <b>II. The "tree-like structure" of HTML (DOM)</b></a><br>
+				<br><a href="Text Editors"> <b>IV. Text Editors (for programming)</b></a><br>
+			</div>
+			<div class="lesson_notes">
+					<h2>Lesson 2 Notes - Creating a Structured Document with HTML</h2>
+
+		        <h3><a id="Inline and block elements"> <b>I. Inline and block elements</b></a></h3>
+		      <p>
+		        HTML elements are either <b>inline</b> or <b>block</b>.
+		        Block elements form an "invisible box" around the
+		        content inside of them. You can see the difference between these 2 types of elements using developer tools in the browser.
+		      </p>
+		      <p>
+		         <h3><b><a id="The "tree-like structure" of HTML (DOM)">II. The "tree-like structure" of HTML (DOM)</a></b> </h3>
+		      </p>
+		      <p>
+		        HTML elements can have other elements inside of them, creating a "tree-like structure".
+		        <br>
+		        In a browser, this structure shows up as a series of nested boxes.
+		      </p>
+		      <p>
+		        <h3><a id="The relationship between indented HTML and boxes">III.The relationship between indented HTML and boxes</a></h3>
+		      </p>
+		      <p>
+		        Looking at HTML document in a text editor, you can see that more indented an element is, the more
+		        deeply nested it's corresponding "box" is.
+		      </p>
+		      <p>
+		        <h3><a id="Text Editors">IV. Text Editors (for programming)</a></h3>
+		        When writing code, programmers use special text editors (like
+		        Sublime Text or Atom). These editors make the programmer's
+		        life easier. For example, some text editors will automatically
+		        generate a closing HTML tag when you write an opening tag.
+		      </p>
+				</div>
+		</div>
+		<div class="large_box">
+			<div class="lesson_highlights">
+				<h2>Lesson 3 Hignlights</h2>
+				<br><a href="Where to add style."><b>I. Where to add style.</b></a><br>
+				<br><a href="Inheritance"><b>II. Inheritance.</b></a>
+			</div>
+			<div class="lesson_notes">
+				<h2>Lesson 3 Notes - Adding Style to HTML</h2>
+						<p><h3><a id="Where to add style.">I. Where to add style.</a></h3><br>
+					 <br>Styles can be defined in different places and are applied in the following order, with definitions   	further down the list overwriting previous definitions:
+					<ul>
+						<li>the default style of a browser (different browsers have slightly different styles)</li>
+						<li>stylesheet in a separate file (this is what you will be mostly using)</li>
+						<li>stylesheet inside HTML (this can be done for small projects but is not ideal)</li>
+						<li>inline style in an element (this can also be done but should be avoided)</li>
+					</ul>
+
+				<i>"Cascading"</i> means that rules are applied not only to the elements they directly match, but also to all of those elements' child elements. However, if a child element has multiple, overlapping rules defined for it, the more specific rule takes effect.<br>
+				You can also have several style sheets, refer to them in the head section of your HTML.<br>
+
+				CSS is like a "search and replace" tool: identify a class or a tag of the element and aplly style to all the instances of this class or tag.
+				</p>
+				<p><h3><a id="Inheritance">II. Inheritance.</a></h3><br>
+				<br>Inheritance is a key feature in CSS, it is the mechanism by which properties are applied not only to a specified element, but also to its descendants. It is based on hierarchy of HTML elements. Descendant elements may inherit CSS property values from any ancestor element enclosing them. In general, descendant elements inherit text-related properties, but box-related properties are not inherited.<br>
+				<br><i> Inheritable </i> properties are:
+				color, font, letter-spacing, line-height, list-style, text-align text-indent, text-transform, visibility, white-space and word-spacing. Properties that cannot be inherited are background, border, display, float and clear, height and width, margin, min- and max-height and -width, outline, overflow, padding, position, text-decoration, vertical-align and z-index.<br>
+				Inheritance allows developers to write less CSS. It enhances faster-loading of web pages by users.<br>
+Useful articles on CSS selectors are here :<br><a href="http://css-tricks.com/how-css-selectors-work/"> http://css-tricks.com/how-css-selectors-work </a> <br> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">https://developer.mozilla.org/en-US/docs/Web/CSS/Reference </a>
+        </p>
+		</body>
