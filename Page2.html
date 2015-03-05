@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+  <HTML>
+    <head>
+      <title> Alfia's notes - Telling computers what to do</title>
+      <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+       <meta charset="utf-8"/>
+    </head>
+	<body>
+		<div class="large_box">
+			<div class="lesson_highlights">
+				<h2>Lesson 1 Hignlights</h2>
+				<br><a href="#CPPL"><b>I. Computers, programs and programming languages</b></a><br>
+				<br><a href="#P"><b>II. Python</b></a><br>
+				<br><a href="#D"><b>III. Debugging</b></a><br>
+				<br><a href="#WRC"><b> IV.  Writing a readable code.</b></a><br>
+			</div>
+			<div class="lesson_notes">
+					
+	          <h2>Lesson 1 Notes - Telling computers what to do</h2>
+					<h3 ID="CPPL"> I. Computers, programs and programming languages</h3>
+						<br> <b>Computers</b>
+						<p> Are electronic devices that can store and process data by following instructions given to them in a program.</p>
+						<br><b>Programs</b>
+						<p>Computer programs are sequences of steps for the computers to follow. </p>
+						<br><b>Programming languages</b>
+						<p>Multiple languages, such as Fortran, Cobol, C++, Python</p>
+						We do not use natural languages for programming because of
+						<ol>
+							<li>Ambiguity</li>
+							<li>Verbosity</li>
+						</ol>
+					<h3 ID="P"> II. Python</h3>
+						<p>Python is on of programming languages. A Python Interpreter converts the programs written in a Python languate to a set of binary instructions that the computer can understand and execute.</p>
+							
+						<p>Python grammar for arithmetic expressions:<br>
+						Expression -> expression operator expression
+						For example: <br>
+						Expression -> number (2) operator (+, *,/) number (4)
+						Parenthesis around expressions indicate priority of this expression.
+						</p>
+
+					<h3 ID="D"> III. Debugging</h3>
+						
+						<p> Debugging is one of the five ways <a href="index.html""#TLP">programmers think</a>. Python requires code be written with a very specific syntax. This means that small typos can lead to program not running at all.<br>
+						The trick to dealing with programming mistakes (called "bugs") is not to avoid making them entirely, because it is impossible. The trick is to develop a system for finding and fixing them.<br>
+						HINT: It's often a good idea to start at the last line of the error message.
+						</p>
+			        <h3 ID="WRC"> IV.  Writing a readable code.</h3>
+			        <ol>
+			        
+						<li>	<b> What is a variable?</b></li>
+							 A variable can be assigned a name via an assignment statement:<br>
+									<p style=justified:center>name = expression</p>
+									
+						<br>
+						<li>	<b>What does it mean to assign a value to a variable?</b></li>
+						Assigning value to a variable is putting the value in a memory cell that has a name on it.<br>
+						<br>
+						<li>	<b>What is the difference between what the equals = means in math versus in programming.</b> What's the difference between this: 2 + 3 = 5 and this: my_variable = 5?</li>
+					</ol>
+			</div>
+		</div>
+		<div class="large_box">
+			<div class="lesson_highlights">
+				<h2>Lesson 2 Hignlights</h2>
+				<br><a href="#var"><b>I. Variables</b></a><br>
+				<br><a href="#str"><b>II. Strings</b></a><br>
+			</div>
+			<div class="lesson_notes">
+					
+	          <h2>Lesson 2 Notes - Variables and Strings</h2>
+					<h3 ID="var"> I. Variables  </h3>
+						<p>Values can be assigned to variables, using a <span class="code"> = </span> sign. This eauals sign is different from an arithmetic equals sign, which is Python actually looks like this: <span class="code"> == </span>. For example, the difference between the equals sign means in <span class="code">2 + 3 = 5</span> and <span class="code">my_variable = 5</span> is:
+				        <p>
+				          Here <span class="code">2 + 3 = 5</span>, the equals sign means "is the same as".
+				        </p>
+				        <p>
+				          And here <span class="code">my_variable = 5</span>, the equals sign means "is assigned the value of".
+				        </p>
+
+						<p>Variables are a convenient way to store data, they are helpful in remembering where the data are stored (when using mnemonic variable names), and they help to save time when data are operated on.</p>
+						<br>The values assigned to the variables can be:</p>
+							<ul>
+								<li> Strings (a sequence of characters in either single or double quotes, but not mixed). For example, <span class="code">"3"</span> and <span class="code">"3"</span> are strings, so <span class="code">"3"+"3"</span> will result in <span class="code">33</span></li><br>
+								<li> Integers (round numbers). For example, <span class="code">3</span> and <span class="code">3</span> are integers, so <span class="code">3+3</span> will result in <span class="code">6</span></li><br>
+								<li> Floats (numbers with decimal points).For example, <span class="code">3.0</span> is a float, <span class="code">3</span> is an integer, so <span class="code">3.0+3</span> will result in <span class="code">6.0</span>. If one of the variables is a float, the result of an arithmetic operation will be a float.</li>
+							</ul>
+							
+						<p> Using variables is a way to name values. There are several name rules in Python:</p>
+							<ul>
+								<li>You can use any letter</li> 
+								<li>You can use the special characters “_"</li> 
+								<li>You can use any number, provided you do not start with it.</li>  
+								<li>White spaces and signs with special meanings in Python, as “+” and “-” are not allowed.</li> 
+								<li>Python variable names are case-sensitive</li> 
+								<li>A convention is not to start a variable name with a capital charachter (even though this is not a hard rule)</li>
+							</ul>
+					<h3 ID="str"> II. Strings </h3>
+						<p>There is a reason for the strings to have either double or single quotes. Sometimes a meaningful text withing the string can have double quotes: <span class="code">variable='Print"Hello"'</span>. In this case, single quotes are appropriate. The string can also have a single quote within: <span class="code">variable2="It's a nice day!"</span> - in this case double quotes can be used. 
+						</p>
+							<ul>
+								<li> Strings can be operated on. For example an <u>operator</u> "+" will <b>concatenate</b> two or more strings (just paste them one after another). Or "*" will multiply a string (for example name="5"*4, print name will give 5555).</li><br>
+								<li>Strings can also be indexed, which means we can extract a part of the sequence of the characters. For example string variable ="udacity", variable[0] will return "u", variable[1+1] will return "a" etc. The index value can be a negative one, where -1 is the last character, -2 is the one before the last, etc.</li><br>										
+								<li> Selecting subsequences of strings -  instead of having just one number is square brackets, we can have two, separated by a colon. The first number will indicate a start, and the second - a stop indices. The returned value will be a string between these numbers, including the start, and not including the stop number. Leaving an empty space instead of the stop number will include all the charachters from the start to the end. Inversley, leaving out the start number, the selection will include all the characters from the beginning to the stop.</li><br>
+								<li>Using a "find" method in strings.
+								<img class="screenshot" src="images/findmethod.jpg" alt = "find method"> 
+								A <b>method</b> is a built-in procedure, provided by Python. 
+								When using the .find method, the output is the first number of the search string. If the search string is not found, the output will be -1. To make .find even more powerful, we can add a second "parameter". A <b>parameter</b> is what goes inside the parentheses. In this code: "text".find("t") the "t" is a parameter; in "text".find("t", 1) there are two parameters, "t" and 1. The second parameter (a number) indicates a position in the string, <u>after</u> which the .find will look for a search string </li><br>
+							</ul>				
+			</div>	
+		</div>
+		
+		<div class="large_box">
+			<div class="lesson_highlights">
+				<h2>Lesson 2 Hignlights</h2>
+				<br><a href="#VS"><b>I. Variables and Strings</b></a><br>
+				<br><a href="#P"><b>II. Python</b></a><br>
+				<br><a href="#D"><b>III. Debugging</b></a><br>
+				<br><a href="#WRC"><b> IV.  Writing a readable code.</b></a><br>
+			</div>
+			<div class="lesson_notes">
+					
+	          <h2>Lesson 1 Notes - Telling computers what to do</h2>
+					<h3 ID="VS"> I. I. Variables and Strings</h3>
+											
+			</div>	
+		</div>	
+		<div class="large_box">
+			<div class="lesson_highlights">
+				<h2>Lesson 2 Hignlights</h2>
+				<br><a href="#VS"><b>I. Variables and Strings</b></a><br>
+				<br><a href="#P"><b>II. Python</b></a><br>
+				<br><a href="#D"><b>III. Debugging</b></a><br>
+				<br><a href="#WRC"><b> IV.  Writing a readable code.</b></a><br>
+			</div>
+			<div class="lesson_notes">
+					
+	          <h2>Lesson 1 Notes - Telling computers what to do</h2>
+					<h3 ID="VS"> I. I. Variables and Strings</h3>
+											
+			</div>	
+		</div>	
+		<div class="large_box">
+			<div class="lesson_highlights">
+				<h2>Lesson 2 Hignlights</h2>
+				<br><a href="#VS"><b>I. Variables and Strings</b></a><br>
+				<br><a href="#P"><b>II. Python</b></a><br>
+				<br><a href="#D"><b>III. Debugging</b></a><br>
+				<br><a href="#WRC"><b> IV.  Writing a readable code.</b></a><br>
+			</div>
+			<div class="lesson_notes">
+					
+	          <h2>Lesson 1 Notes - Telling computers what to do</h2>
+					<h3 ID="VS"> I. I. Variables and Strings</h3>
+											
+			</div>	
+		</div>	
+		<div class="large_box">
+			<div class="lesson_highlights">
+				<h2>Lesson 2 Hignlights</h2>
+				<br><a href="#VS"><b>I. Variables and Strings</b></a><br>
+				<br><a href="#P"><b>II. Python</b></a><br>
+				<br><a href="#D"><b>III. Debugging</b></a><br>
+				<br><a href="#WRC"><b> IV.  Writing a readable code.</b></a><br>
+			</div>
+			<div class="lesson_notes">
+					
+	          <h2>Lesson 1 Notes - Telling computers what to do</h2>
+					<h3 ID="VS"> I. I. Variables and Strings</h3>
+											
+			</div>	
+		</div>		
+	</body>
+  </HTML>
