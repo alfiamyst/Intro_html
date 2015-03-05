@@ -44,3 +44,14 @@ h2 {
   border-radius: 10px;
   background-color: #E0FFFF;
     }
+  .screenshot {
+  width: 40%;
+  float: right;
+}
+
+span.code {
+    font-family: Courier;
+    background-color: #BBBBBB;
+    padding: 1px 3px;
+    font-weight: bold;
+}
