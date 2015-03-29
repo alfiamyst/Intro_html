@@ -61,7 +61,7 @@ h2 {
     }
   .screenshot {
   width: 40%;
-  float: right;
+  left: 5%;
 }
 
 span.code {

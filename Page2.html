@@ -176,7 +176,7 @@
 							<li>To display the results of a function call use print command.</li>
 						</ul>
 					<h3 ID="AHP"> IV. Automate HTML using Python</h3>
-						<img src="http://i.imgur.com/FF6GuIR.png" alt = "example of HTML-generating Python code">	
+						<img class="screenshot" src="http://i.imgur.com/FF6GuIR.png" alt = "example of HTML-generating Python code">	
 			</div>
 		</div>	
 		<div class="large_box">
@@ -197,17 +197,51 @@
 		</div>	
 		<div class="large_box">
 			<div class="lesson_highlights">
-				<h2>Lesson 2 Hignlights</h2>
-				<br><a href="#VS"><b>I. Variables and Strings</b></a><br>
-				<br><a href="#P"><b>II. Python</b></a><br>
-				<br><a href="#D"><b>III. Debugging</b></a><br>
-				<br><a href="#WRC"><b> IV.  Writing a readable code.</b></a><br>
+				<h2>Lesson 5 Hignlights</h2>
+				<br><a href="#SvsL"><b>I. Differences and similarities between strings and lists.</b></a><br>
+				<br><a href="#Mut"><b>II. Mutation.</b></a><br>
+				<br><a href="#Ali"><b>III. Aliasing.</b></a><br>
+				<br><a href="#OLO"><b>IV. Other list operations.</b></a><br>
+				<br><a href="#LOL"><b>V. Loops on lists.</b></a><br>
 			</div>
 			<div class="lesson_notes">
 					
-	          <h2>Lesson 1 Notes - Telling computers what to do</h2>
-					<h3 ID="VS"> I. I. Variables and Strings</h3>
-											
+	          <h2>Lesson 5 Structured Data</h2>
+					<h3 ID="SvsL"> I. Differences and similarities between strings and lists.</h3>
+						<p>Strings and lists are similar, though lists are more poweful. Here are where they are similar and different:</p>
+						<ul>
+							<li> Both are sequences, though a String is a sequence of characters, while list is a sequence of anything, including strings and other lists.</li>
+							<li> Both can be assigned to a variable; string - in quotes, list - in square brackets.</li>
+							<li> Sub-sequences of both can be accessed using an index in square brackets. They return strings and lists, corresponding to the origin</li>
+						</ul>
+						<img class=screenshot src="images/strings_and_lists.jpg" alt = "Differences and similarities between strings and lists">
+						<p> The general grammar for creation of a list is to have a name for a list, assignment sign, square brackets, and the expressions of the list, separated by a comma.</p>
+					<h3 ID="Mut"> II. Mutation.</h3>
+						<p>Lists support mutation, while strings do not(they are "immutable"). When we concotinate strings, this does not modify an existing string, but creates a brand new one. Mutation allows to change a selected expression within a list, without creating a new one:</p>	
+						<img class="screenshot" src="images/mutation.jpg"	alt="example of mutation">	
+					<h3 ID="Ali"> III. Aliasing.</h3>
+						<p>When we refer to the same object using different ways, it is called aliasing. For example, we have a variable 'p' that is assigned to a list. If then we assign a variable 'q' to the variable 'p', whatever we do with the list will be reflected in both p and q. However, if we assign p to a new object, the value of q will remain the same, as before.</p>	
+					<h3 ID="OLO"> IV. Other list operations.</h3>
+						<h4>Append</h4>	
+							<p>Append is like a procedure, but it is a method. It mutates the list after execution. </p>
+							<img class="screenshot" src="images/append.jpg" alt="Example of how append works">
+						<h4>Plus (+) operator</h4>	
+							<p>Plus works similar to concotination operation of strings. It produces a new list after execution, and it does not mutate any of the input lists. </p>
+							<img class="screenshot" src="images/plus.jpg" alt="Example of how a plus works">
+						<h4>Length (len) operator</h4>
+							<p>len operator works on any object that is a collection of things, such as strings and lists.</p>
+						<h4>Index and in on lists</h4>
+						    <img class="screenshot" src="images/index_and_in.jpg" alt="index and in on loops">
+							<img class="screenshot" src="images/len.jpg" alt="how len works">
+					<h3 ID="LON"> V. Loops on lists.</h3>
+						<h4>While on lists.</h4>
+							<p> While works on lists the same way as on strings. We have a test statement in the block, which will return the the while until the test is no longer true: </p>
+							<img class="screenshot" src="images/while.jpg" alt= "While on Loops">
+						<h4>For on lists.</h4>
+							<p> For in loop on lists goes through each element of the list ('name' introduces a new variable for the list expressions), performing an action, specified in a block of the loop:</p>
+							<img class="screenshot" src="images/for-in.jpg" alt="For on loops">
+
+ 
 			</div>	
 		</div>	
 		<div class="large_box">
